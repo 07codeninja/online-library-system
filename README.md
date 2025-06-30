@@ -1,12 +1,45 @@
-# React + Vite
+# Online Library System (React + Redux)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic online library system built with **React**, **React Router**, and **Redux Toolkit** as part of a university assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Home Page
+- Welcome message
+- List of book categories (Fiction, Non-Fiction, Sci-Fi, etc.)
+- List of popular books with links to details
 
-## Expanding the ESLint configuration
+### Browse Books Page
+- Display all books from Redux state
+- Filter books by category via dynamic route: `/books/:category`
+- Search bar to filter books by title or author
+- "View Details" link for each book
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Book Details Page
+- Display title, author, description, and rating of the book
+- Dynamic route: `/book/:id`
+- "Back to Browse" navigation
+
+### Add Book Page
+- Form to add a new book (with validation)
+- Redux used to manage book list state
+- Redirects to Browse Books after submission
+
+### 404 Page
+- Displays when an unknown route is accessed
+- Link to return to Home page
+
+## Tech Stack
+
+- React (Vite)
+- React Router DOM
+- Redux Toolkit
+- React Redux
+- Plain CSS for styling
+
+## How to Run
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/07codeninja/online-library-system.git
+   cd online-library-system
